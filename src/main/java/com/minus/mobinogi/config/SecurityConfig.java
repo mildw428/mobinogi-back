@@ -44,7 +44,12 @@ public class SecurityConfig {
                 "http://golrajo.com",
                 "https://golrajo.com",
                 "http://www.golrajo.com",
-                "https://www.golrajo.com"));
+                "https://www.golrajo.com",
+                "http://mobilog.golrajo.com",
+                "https://mobilog.golrajo.com",
+                "http://www.mobilog.golrajo.com",
+                "https://www.mobilog.golrajo.com"
+        ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
 //        config.setAllowCredentials(true); // 프론트에서 credentials: 'include' 사용 시 필수
