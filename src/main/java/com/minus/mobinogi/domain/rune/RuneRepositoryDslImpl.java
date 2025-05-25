@@ -63,7 +63,7 @@ public class RuneRepositoryDslImpl extends QuerydslRepositorySupport implements 
         if(jobs == null || jobs.isEmpty()) {
             return null;
         }
-        return rune.job.in(jobs);
+        return rune.job.in(jobs).or(rune.job.eq(CharacterClass.NONE));
     }
 
     private BooleanExpression inGrade(List<ItemGrade> grades) {
